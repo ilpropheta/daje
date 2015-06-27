@@ -6,7 +6,7 @@ In this repository I'm collecting common code, particular data structures, inter
 If you feel like connecting with me on HackerRank, here is my profile:
 https://www.hackerrank.com/ilpropheta
 
-## This is NOT a library.
+## This is NOT a library
 
 Files in this repository are not intended to be included somewhere. They contain snippets, functions, data structures, easy to copy-and-paste into the challenge editor.
 
