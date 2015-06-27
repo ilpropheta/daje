@@ -9,6 +9,6 @@ Common math functions and snippets.
 
 * digit-operations.hpp
   * __sum_of_digits__ : calculates the sum of the digits of a number
-
-## This is NOT a library.
+  * 
+## This is NOT a library
 Files in this folder are not intended to be included somewhere. They contain snippets, easy to copy-and-paste into the challenge editor.
