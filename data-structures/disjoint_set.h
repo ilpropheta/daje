@@ -1,4 +1,5 @@
 #include <vector>
+#include <numeric>
 
 /*
 	Union-Find data structure. It's used for set partitioning problems
@@ -13,7 +14,7 @@ public:
 	disjoint_set(size_t size)
 		: parents(size), sizes(size, 1)
 	{
-		iota(begin(parents), end(parents), 0); // each node is parent of itself
+		std::iota(begin(parents), end(parents), 0); // each node is parent of itself
 	}
 
 	size_t size() const
@@ -55,6 +56,6 @@ public:
 	}
 	
 private:
-	vector<int> parents; // parent node of subset i
-	vector<int> sizes; // size of subset i
+	std::vector<int> parents; // parent node of subset i
+	std::vector<int> sizes; // size of subset i
 };
