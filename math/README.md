@@ -8,8 +8,7 @@ Common math functions and snippets.
   * __sum_of_prime_factors__ : calculates the sum of all the prime factors of a number
 
 * digit-operations.hpp
-  * __sum_of_digits__ : calculates the sum of the digits of a number
-  * 
+  * __sum_of_digits__ : calculates the sum of the digits of a number 
 
 * perfect-squares.hpp
   * __is_perfect_square__ : returns if an int number is a square of another (and its root, eventually)
