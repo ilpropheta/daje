@@ -11,7 +11,7 @@ std::pair<bool, int> is_perfect_square(int n)
 
 // it's also a solution of https://www.hackerrank.com/challenges/sherlock-and-squares
 // [a, b] both inclusive
-unsigned int perfect_squares_in_range(int a, int b)
+unsigned int count_perfect_squares_in_range(int a, int b)
 {
     std::pair<bool, int> pfs = {false, 0};
     while (a<=b && !(pfs=is_perfect_square(a)).first) // find the first perfect square (if any)
@@ -31,7 +31,7 @@ unsigned int perfect_squares_in_range(int a, int b)
 
 // simple receiver-style version of perfect_squares_in_range
 template<typename F>
-void perfect_squares_in_range(int a, int b, F receiver)
+void for_each_perfect_squares_in_range(int a, int b, F receiver)
 {
     std::pair<bool, int> pfs = {false, 0};
     while (a<=b && !(pfs=is_perfect_square(a)).first) // find the first perfect square (if any)
@@ -53,7 +53,7 @@ void perfect_squares_in_range(int a, int b, F receiver)
 
 // keeps on computing sqrt(a) even if I find the first perfect square 
 // passed all HackerRank test cases but it's such a poorer solution
-unsigned int perfect_squares_in_range_minimal(int a, int b)
+unsigned int count_perfect_squares_in_range_naive(int a, int b)
 {
     unsigned int count = 0;
     while (a<=b)
