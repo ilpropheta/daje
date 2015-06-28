@@ -3,8 +3,8 @@
 // first -> true if n is a perfect square, false otherwise
 // second -> sqrt of n (as int)
 pair<bool, int> is_perfect_square(int n)
-{
-	const auto root = sqrt(n);
+{ 
+    const auto root = sqrt(n);
     return make_pair(root == floor(root), root);
 }
 
@@ -12,7 +12,7 @@ pair<bool, int> is_perfect_square(int n)
 // [a, b] both inclusive
 int perfect_squares_in_range(int a, int b)
 {
-	pair<bool, int> pfs = {false, 0};
+   pair<bool, int> pfs = {false, 0};
     while (a<=b && !(pfs=is_perfect_square(a)).first) // find the first perfect square (if any)
         ++a;
 
@@ -32,7 +32,7 @@ int perfect_squares_in_range(int a, int b)
 template<typename F>
 void perfect_squares_in_range(int a, int b, F receiver)
 {
-	pair<bool, int> pfs = {false, 0};
+    pair<bool, int> pfs = {false, 0};
     while (a<=b && !(pfs=is_perfect_square(a)).first) // find the first perfect square (if any)
         ++a;
 
@@ -54,7 +54,7 @@ void perfect_squares_in_range(int a, int b, F receiver)
 // passed all HackerRank test cases but it's such a poorer solution
 int perfect_squares_in_range_minimal(int a, int b)
 {
-	unsigned int count = 0;
+    unsigned int count = 0;
     while (a<=b)
     {
         auto root = sqrt(a);
