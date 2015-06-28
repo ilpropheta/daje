@@ -1,7 +1,7 @@
 # daje
 I've been completely enraptured by HackerRank and similar websites. 
 
-In this repository I'm collecting common code, particular data structures, interesting algorithms and so on. Maybe it can be useful to other programmers. It's mostly C++ code but I like solving challenges in other languages as well. 
+In this repository I'm collecting common code, particular data structures, interesting algorithms and so on. Maybe it can be useful to other programmers. At the moment it's all C++ code, but I like solving challenges in other languages as well.
 
 If you feel like connecting with me on HackerRank, here is my profile:
 https://www.hackerrank.com/ilpropheta
