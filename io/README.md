@@ -12,4 +12,6 @@ Common snippets for I/O operations.
   * __read_vector_from_stdin__ : reads a T vector and its size from cin
 
 ## This is NOT a library
-Files in this folder are not intended to be included somewhere. They contain snippets, easy to copy-and-paste into the challenge editor.
+.hpp files in this folder are not intended to be included somewhere. They contain snippets, easy to copy-and-paste into the challenge editor.
+
+__However__ .h files can be used as header-only.
