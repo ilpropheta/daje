@@ -31,7 +31,7 @@ unsigned int count_perfect_squares_in_range(int a, int b)
 
 // simple receiver-style version of perfect_squares_in_range
 template<typename F>
-void for_each_perfect_squares_in_range(int a, int b, F receiver)
+void for_each_perfect_square_in_range(int a, int b, F receiver)
 {
     std::pair<bool, int> pfs = {false, 0};
     while (a<=b && !(pfs=is_perfect_square(a)).first) // find the first perfect square (if any)
