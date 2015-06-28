@@ -1,18 +1,19 @@
 #include <cmath>
+#include <utility>
 
 // first -> true if n is a perfect square, false otherwise
 // second -> sqrt of n (as int)
-pair<bool, int> is_perfect_square(int n)
+std::pair<bool, int> is_perfect_square(int n)
 { 
-    const auto root = sqrt(n);
-    return make_pair(root == floor(root), root);
+    const auto root = std::sqrt(n);
+    return std::make_pair(root == std::floor(root), root);
 }
 
 // it's also a solution of https://www.hackerrank.com/challenges/sherlock-and-squares
 // [a, b] both inclusive
-int perfect_squares_in_range(int a, int b)
+unsigned int perfect_squares_in_range(int a, int b)
 {
-   pair<bool, int> pfs = {false, 0};
+    std::pair<bool, int> pfs = {false, 0};
     while (a<=b && !(pfs=is_perfect_square(a)).first) // find the first perfect square (if any)
         ++a;
 
@@ -32,7 +33,7 @@ int perfect_squares_in_range(int a, int b)
 template<typename F>
 void perfect_squares_in_range(int a, int b, F receiver)
 {
-    pair<bool, int> pfs = {false, 0};
+    std::pair<bool, int> pfs = {false, 0};
     while (a<=b && !(pfs=is_perfect_square(a)).first) // find the first perfect square (if any)
         ++a;
 
@@ -52,13 +53,13 @@ void perfect_squares_in_range(int a, int b, F receiver)
 
 // keeps on computing sqrt(a) even if I find the first perfect square 
 // passed all HackerRank test cases but it's such a poorer solution
-int perfect_squares_in_range_minimal(int a, int b)
+unsigned int perfect_squares_in_range_minimal(int a, int b)
 {
     unsigned int count = 0;
     while (a<=b)
     {
-        auto root = sqrt(a);
-        if (root == floor(root))
+        auto root = std::sqrt(a);
+        if (root == std::floor(root))
         {
             ++count;
             a = (root+1)*(root+1);
