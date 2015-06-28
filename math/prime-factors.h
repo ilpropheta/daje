@@ -1,15 +1,16 @@
 #include <cmath>
+#include <vector>
 
-vector<int> prime_factors_of(int n)
+std::vector<int> prime_factors_of(int n)
 {
-    vector<int> factors;
+    std::vector<int> factors;
     while (n%2 == 0) // while n is even
     {
         factors.push_back(2);
         n = n/2;
     }
  
-    for (auto i=3; i <= sqrt(n); i+=2) // i is odd here (skip 2 numbers)
+    for (auto i=3; i <= std::sqrt(n); i+=2) // i is odd here (skip 2 numbers)
     {
         while (n%i == 0)
         {
@@ -33,7 +34,7 @@ int sum_of_prime_factors(int n)
         n = n/2;
     }
  
-    for (auto i=3; i <= sqrt(n); i+=2) // i is odd here (skip 2 numbers)
+    for (auto i=3; i <= std::sqrt(n); i+=2) // i is odd here (skip 2 numbers)
     {
         while (n%i == 0)
         {
