@@ -6,10 +6,10 @@ Trivial functions and snippets regarding cryptography.
 * basics.hpp
   * __shift_by__ : given a string containing only {0,1,...,9}, returns the cyclic-right-shifted string by e positions
   * __shift_by_inplace__ : as above, this time the shift is in-place
+  * __shift_by_inplace__ : as above, except for the the encryption that happens in-place
 
 * caesar.hpp
   * __encrypt_as_caesar__ : given a string containing english lowercase letters, returns the Caesar-encoded string (that is, the letters of the originary string are rotated by K positions to the right)
-  * __shift_by_inplace__ : as above, except for the the encryption that happens in-place
   * __encrypt_as_caesar_inplace__ : as above, except for the alphabet that is provided by the user
   * __decrypt_as_caesar__ : inverse function of __encrypt_as_caesar__
   * __decrypt_as_caesar_inplace__ : inverse function of __encrypt_as_caesar_inplace__ (alphabet provided by the user)
