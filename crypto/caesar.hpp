@@ -64,6 +64,7 @@ std::string decrypt_as_caesar(const string& m, int K)
 	return decrypted;
 }
 
+// alphabet must be sorted in ascending order
 void decrypt_as_caesar_inplace(string& m, int K, const vector<char>& alphabet)
 {
 	const auto alphabetLen = alphabet.size();
