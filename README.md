@@ -15,4 +15,4 @@ __However__ my convention here is the following:
 * .hpp files are intended to be snippets or groups of common/similar code
 
 ## Why "daje"?
-Don't try to find any acronym for "daje". It's roman slang meaning something like "Yippee!". This repository is named "daje" merely for two reasons: on one hand I generally name github repository as roman words, on the other hand when I solve a challenge I exult by shouting out "daje!".
+Don't try to find any acronym for "daje". It's Roman slang meaning something like "Yippee!". This repository is named "daje" merely for two reasons: on one hand I generally name github repository as Roman words, on the other hand when I solve a challenge I exult by shouting out "daje!".
