@@ -14,6 +14,10 @@ Trivial functions and snippets regarding cryptography.
   * __decrypt_as_caesar__ : inverse function of __encrypt_as_caesar__
   * __decrypt_as_caesar_inplace__ : inverse function of __encrypt_as_caesar_inplace__ (alphabet provided by the user)
 
+* xor.hpp
+  * __xor_encrypt__ : encrypts/decrypts a message given a key by using the XOR Cipher
+  * __xor_encrypt_inplace__ : encrypts/decrypts in-place a message given a key by using the XOR Cipher
+
 ## This is NOT a library
 .hpp files in this folder are not intended to be included somewhere. They contain snippets, easy to copy-and-paste into the challenge editor.
 
