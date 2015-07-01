@@ -12,7 +12,7 @@ Bit operations.
 * flags.hpp
   * __is_active__ : checks if the ith bit of 32bit int is set to 1
   * __set_active__ : sets to 1 the ith bit of 32bit int
-  * __set_inactive_ : sets to 0 the ith bit of 32bit int
+  * __set_inactive__ : sets to 0 the ith bit of 32bit int
   * __set_flip__ : fips the ith bit of 32bit int
 
 ## This is NOT a library
