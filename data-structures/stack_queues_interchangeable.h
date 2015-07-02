@@ -24,7 +24,7 @@ public:
           tmp.push(q.front());
           q.pop();
       }
-      q = move(tmp); // or swap
+      q = std::move(tmp); // or swap
     }
 
     // O(1)
@@ -46,7 +46,7 @@ public:
     }
     
 private:
-    queue<int> q;
+    std::queue<int> q;
 };
 
 /* 
@@ -95,6 +95,6 @@ public:
   
 private:
   // mutable for making front const
-  mutable stack<int> in;
-  mutable stack<int> out;
+  mutable std::stack<int> in;
+  mutable std::stack<int> out;
 };
