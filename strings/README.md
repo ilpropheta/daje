@@ -4,6 +4,7 @@ String algorithms and snippets, common regular expressions, etc.
 ## Current contents
 
 * parse-subscript.hpp
+
   * __parse_subscript_clike__ : parses string like "parameterName[10]" and returns the pair [parameterName, 10]. This version is much faster than the regex one.
   * __parse_subscript_regex__ : parses string like "parameterName[10]" and returns the pair [parameterName, 10]
   
