@@ -48,7 +48,7 @@ void print_primes(const std::vector<bool>& sieve)
 {
    for (auto i = 0u; i < sieve.size(); ++i)
    {     
-	  if (sieve[i])
-         cout << i * 2 + 3 << ", ";
+	if (sieve[i])
+          cout << i * 2 + 3 << ", ";
    }
 }
