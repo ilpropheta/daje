@@ -7,7 +7,7 @@ Common math functions and snippets.
   * __sum_of_digits__ : calculates the sum of the digits of a number 
   
 * eratosthenes-sieve.h
-  * __sieve__ : implementation of the Sieve of Eatosthenes taken from "From Mathematics to Generic Programming"
+  * __sift__ : implementation of the Sieve of Eatosthenes taken from "From Mathematics to Generic Programming"
 
 * perfect-squares.h
   * __is_perfect_square__ : returns if an int number is a square of another (and its root, eventually)
