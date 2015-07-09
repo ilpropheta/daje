@@ -29,6 +29,10 @@ Common math functions and snippets.
   * __prime_factors_of__ : returns all the prime factors of a number
   * __sum_of_prime_factors__ : calculates the sum of all the prime factors of a number
 
+* repdigit.h
+  * __repdigit__ : returns the number composed of repeated instances of the same digit in a positional number system. (e.g. 111, 33333)
+  * __repdigit_base10__ : returns the number composed of repeated instances of the same digit in base 10 (e.g. 111, 33333)
+
 ## This is NOT a library
 .hpp files in this folder are not intended to be included somewhere. They contain snippets, easy to copy-and-paste into the challenge editor.
 
