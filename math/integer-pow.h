@@ -1,5 +1,5 @@
 /* 
-   Exponentiation by squaring
+   Exponentiation by squaring - O(exp*log(base))
 */
 int ipow(int base, int exp)
 {
