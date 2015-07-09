@@ -12,6 +12,9 @@ Common math functions and snippets.
 * fibonacci.hpp
   * __nth_fibo__ : returns the nth Fibonacci number by using Binet's formula
   * __is_fibo__ : returns true if an int is a Fibonacci number, false otherwise
+  * __recursive_fibo__ : returns the nth Fibonacci number by using naive recursion - O(2^n)
+  * __dp_fibo__ : returns the nth Fibonacci number by using naive recursion - O(n)
+  * __std_fibo__ : returns the nth Fibonacci number by using 'adjacent_difference' - O(n)
 
 * perfect-squares.h
   * __is_perfect_square__ : returns if an int number is a square of another (and its root, eventually)
