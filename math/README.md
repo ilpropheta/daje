@@ -10,7 +10,7 @@ Common math functions and snippets.
   * __sift__ : implementation of the Sieve of Eatosthenes taken from "From Mathematics to Generic Programming"
 
 * fibonacci.hpp
-  * __nth_fibo__ : gets the nth Fibonacci number by using Binet's formula
+  * __nth_fibo__ : returns the nth Fibonacci number by using Binet's formula
   * __is_fibo__ : returns true if an int is a Fibonacci number, false otherwise
 
 * perfect-squares.h
