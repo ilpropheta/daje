@@ -17,6 +17,9 @@ Common math functions and snippets.
   * __std_fibo__ : returns the nth Fibonacci number by using 'adjacent_difference' - O(n)
   * __matrix_fibo__ : returns the nth Fibonacci number by using Matrix Exponentiation method - O(log(n))
 
+* integer-pow.h
+  * __ipow__ : integer power implemented in terms of exponentiation by squaring
+
 * perfect-squares.h
   * __is_perfect_square__ : returns if an int number is a square of another (and its root, eventually)
   * __perfect_squares_in_range__ : returns the number of perfect squares in a range [a, b]
