@@ -15,6 +15,7 @@ Common math functions and snippets.
   * __recursive_fibo__ : returns the nth Fibonacci number by using naive recursion - O(2^n)
   * __dp_fibo__ : returns the nth Fibonacci number by using Dynamic Programming - O(n)
   * __std_fibo__ : returns the nth Fibonacci number by using 'adjacent_difference' - O(n)
+  * __matrix_fibo__ : returns the nth Fibonacci number by using Matrix Exponentiation method - O(log(n))
 
 * perfect-squares.h
   * __is_perfect_square__ : returns if an int number is a square of another (and its root, eventually)
