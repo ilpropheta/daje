@@ -73,3 +73,59 @@ int std_fibo(int n)
    std::adjacent_difference(v.begin(), v.end() - 1, v.begin() + 1, std::plus<int>());
    return v.back();
 }
+
+vector<vector<int>> matrix_mul(const vector<vector<int>>& A, const vector<vector<int>>& B);
+vector<vector<int>> matrix_pow(const vector<vector<int>>& A, int p);
+
+// Matrix Exponentiation - O(log(n))
+int matrix_fibo(int n)
+{
+  if (n == 0)
+    return 0;
+  if (n == 1)
+    return 1;
+  vector<vector<int>> M = { { 1, 1 }, { 1, 0 } };
+  auto res = matrix_pow(M, n - 1);
+  return res[0][0];
+}
+
+// simple matrix multiplication
+vector<vector<int>> matrix_mul(const vector<vector<int>>& A, const vector<vector<int>>& B)
+{
+  const auto rowsA = A.size();
+  const auto rowsB = B.size();
+  if (!rowsA || !rowsB)
+    return{};
+  
+  const auto colsA = A.front().size();
+  const auto colsB = B.front().size();
+  if (!colsA || !colsB)
+    return{};
+  
+  if (rowsA != colsB)
+    return{};
+
+  // resulting matrix [rowsA x colsB]
+  vector<vector<int>> res(rowsA);
+  fill(begin(res), end(res), vector<int>(colsB));
+
+  for (auto i = 0u; i < rowsA; i++)
+    for (auto j = 0u; j < colsB; j++)
+      for (auto k = 0u; k < colsA; k++)
+      {
+        res[i][j] += A[i][k] * B[k][j];
+      }
+  return res;
+}
+
+// matrix power in A^p in O(log(p))
+vector<vector<int>> matrix_pow(const vector<vector<int>>& A, int p)
+{
+  if (p == 1)
+    return A;
+  if (p % 2 == 1)
+    return matrix_mul(A, matrix_pow(A, p - 1));
+
+  auto B = matrix_pow(A, p / 2);
+  return matrix_mul(B, B);
+}
