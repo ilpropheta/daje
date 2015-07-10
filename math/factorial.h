@@ -1,10 +1,10 @@
-// Classical recursive version
+// Classical recursive version - O(n)
 int fact_recursive(int n)
 {
   return (n==0 || n==1) ? 1 : (n * fact(n-1));
 }
 
-// Classical iterative version
+// Classical iterative version- O(n)
 int fact_iterative(int n)
 {
   if (!n) return 1;
@@ -13,7 +13,7 @@ int fact_iterative(int n)
   return f;
 }
 
-// unsigned long long (assuming 64bit) bounded version
+// unsigned long long (assuming 64bit) bounded version - O(1)
 unsigned long long fact_bounded(unsigned long long i)
 {
   static const unsigned long long table[] = {
@@ -23,4 +23,17 @@ unsigned long long fact_bounded(unsigned long long i)
     121645100408832000, 2432902008176640000, 14197454024290336768, 17196083355034583040
   };
   return i < (sizeof(table) / sizeof(unsigned long long)) ? table[i] : 0ull;
+}
+
+#include <vector>
+#include <numeric>
+
+// Generating factorials from '0' to 'upTo' by using the power of standard algorithms - O(n)
+// (max value for upTo is 23)
+std::vector<unsigned long long> fact_generate(size_t upTo)
+{
+  vector<unsigned long long> vals(upTo, 1); // [1,1,...1] - O(n)
+  iota(begin(vals) + 1, end(vals), 1); // [1,1,2,3,4,...,upTo] - O(n)
+  partial_sum(begin(vals), end(vals), begin(vals), multiplies<>()); // [1, 1*1, 1*1*2, 1*1*2*3, ...] - O(n)
+  return vals;
 }
