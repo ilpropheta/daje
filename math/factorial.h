@@ -20,7 +20,7 @@ unsigned long long fact_bounded(unsigned long long i)
     1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880,
     3628800, 39916800, 479001600, 6227020800, 87178291200,
     1307674368000, 20922789888000, 355687428096000, 6402373705728000,
-    121645100408832000, 2432902008176640000, 14197454024290336768, 17196083355034583040
+    121645100408832000, 2432902008176640000 // last = 20!
   };
   return i < (sizeof(table) / sizeof(unsigned long long)) ? table[i] : 0ull;
 }
@@ -29,7 +29,7 @@ unsigned long long fact_bounded(unsigned long long i)
 #include <numeric>
 
 // Generating factorials from '0' to 'upTo' by using the power of standard algorithms - O(n)
-// (max value for upTo is 23)
+// (max value for upTo is 20)
 std::vector<unsigned long long> fact_generate(size_t upTo)
 {
   vector<unsigned long long> vals(upTo, 1); // [1,1,...1] - O(n)
