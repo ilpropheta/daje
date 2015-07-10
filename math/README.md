@@ -8,6 +8,11 @@ Common math functions and snippets.
   
 * eratosthenes-sieve.h
   * __sift__ : implementation of the Sieve of Eatosthenes taken from "From Mathematics to Generic Programming"
+ 
+* factorial.h
+  * __fact_recursive__ : classical recursive implementation of factorial
+  * __fact_iterative__ : classical iterative implementation of factorial 
+  * __fact_bounded__ : 64bit unsigned long long bounded version of factorial (lookup table)
 
 * fibonacci.hpp
   * __nth_fibo__ : returns the nth Fibonacci number by using Binet's formula
