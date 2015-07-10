@@ -13,6 +13,7 @@ Common math functions and snippets.
   * __fact_recursive__ : classical recursive implementation of factorial
   * __fact_iterative__ : classical iterative implementation of factorial 
   * __fact_bounded__ : 64bit unsigned long long bounded version of factorial (lookup table)
+  * __fact_generate__ : generates first N factorials by using only standard algorithms
 
 * fibonacci.hpp
   * __nth_fibo__ : returns the nth Fibonacci number by using Binet's formula
