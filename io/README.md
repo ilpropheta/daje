@@ -5,6 +5,9 @@ Common snippets for I/O operations.
 
 * for-each-test-case.hpp : minimalistic main performing T iterations (T read from cin)
 
+* io_manipulators.h
+  * __as_line__ : reads a line to a string, with a stream-like syntax
+
 * read-vector-cin.hpp
   * __read_vector_from_stdin__ : reads an int vector of size n from cin
   * __read_vector_from_stdin__ : reads an int vector and its size from cin
