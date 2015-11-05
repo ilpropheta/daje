@@ -1,5 +1,5 @@
 /* Conversion snippets from/to binary numbers. 
-   Use bitset if possible.
+   Use bitset if possible. This functions are as divulgative as possible (e.g. they are not intended to be optimized).
 */
 #include <bitset>
 
@@ -60,4 +60,15 @@ template<unsigned n>
 auto decimal_to_bitset()
 {
    return bitset<nbit(n)>(n);
+}
+
+// gets a string representing the binary conversion of a number (drops the leading zeros).
+// This function is kind of the dynamic equivalent of the previous decimal_to_bitset()
+// E.g.: cout << to_binary_str(30) << endl; // 11110
+template<typename Num>
+string to_binary_str(Num n)
+{
+   auto binStr = bitset<sizeof(Num)*8>(n).to_string();
+   binStr.erase(0, min(binStr.find_first_not_of('0'), binStr.size()-1));
+   return binStr;
 }
