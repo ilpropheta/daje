@@ -39,6 +39,13 @@ Common math functions and snippets.
   * __repdigit__ : returns the number composed of repeated instances of the same digit in a positional number system. (e.g. 111, 33333)
   * __repdigit_base10__ : returns the number composed of repeated instances of the same digit in base 10 (e.g. 111, 33333)
 
+* stats_warmup.h
+  * __mean__ : calculates the average of a vector of ints
+  * __median__ : calculates the mediant of a vector of ints
+  * __mode__ : returns the most occuring element of a vector of ints (the smallest in case of ambiguity)
+  * __std_dev__ : calculates the standard deviation of a vector of ints
+  * __confidence_bounds__ : calculates the lower and upper boundary of the 95% Confidence Interval for the mean
+
 ## This is NOT a library
 .hpp files in this folder are not intended to be included somewhere. They contain snippets, easy to copy-and-paste into the challenge editor.
 
