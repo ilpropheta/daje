@@ -14,7 +14,7 @@ std::pair<std::string, int> parse_subscript_clike(const string& param)
    const char* endSb = strchr(param.c_str(), ']');
    if (begSb && endSb && begSb < endSb)
    {
-      return{ param.substr(0, std::distance(param.c_str(), begSb)), stoi(string(begSb + 1, endSb)) };
+      return{ {param.c_str(), begSb}, stoi(string(begSb + 1, endSb)) };
    }
    return {};
 }
