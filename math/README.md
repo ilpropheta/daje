@@ -26,6 +26,9 @@ Common math functions and snippets.
 * integer-pow.h
   * __ipow__ : integer power implemented in terms of exponentiation by squaring
 
+* isprime.h
+  * __is_prime__ : checks if an int is prime
+
 * perfect-squares.h
   * __is_perfect_square__ : returns if an int number is a square of another (and its root, eventually)
   * __perfect_squares_in_range__ : returns the number of perfect squares in a range [a, b]
