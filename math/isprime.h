@@ -1,7 +1,7 @@
 /*
   simple function to check if an int number is prime
 */
-bool isPrime(int num) 
+bool is_prime(int num) 
 {
     if (num <= 3) 
     {
