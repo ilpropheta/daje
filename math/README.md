@@ -44,6 +44,7 @@ Common math functions and snippets.
 
 * stats_warmup.h
   * __mean__ : calculates the average of a vector of ints
+  * __weighted_mean__ : calculates the weighted mean of a vector of ints
   * __median__ : calculates the mediant of a vector of ints
   * __mode__ : returns the most occuring element of a vector of ints (the smallest in case of ambiguity)
   * __std_dev__ : calculates the standard deviation of a vector of ints
