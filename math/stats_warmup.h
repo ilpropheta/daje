@@ -15,6 +15,13 @@ inline float mean(const std::vector<int>& v)
    return std::accumulate(begin(v), end(v), 0)/float(v.size());
 }
 
+// O(n)
+inline float weighted_mean(const vector<int>& x, const vector<int>& w)
+{
+    const float wsum = accumulate(begin(w), end(w), 0);
+    return inner_product(begin(x), end(x), begin(w), 0)/wsum;
+}
+
 // O(n) - changes the vector
 float median(std::vector<int> &v)
 {
