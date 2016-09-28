@@ -41,7 +41,11 @@ Common math functions and snippets.
 * repdigit.h
   * __repdigit__ : returns the number composed of repeated instances of the same digit in a positional number system. (e.g. 111, 33333)
   * __repdigit_base10__ : returns the number composed of repeated instances of the same digit in base 10 (e.g. 111, 33333)
-
+  
+* roman_numbers.h
+  * __to_roman_ifcascade__ : converts an int into the corresponding Roman number, by using the classic "if-cascade" approach
+  * __to_roman_lower_bound__ : converts an int into the corresponding Roman number, by using std::map + lower_bound
+  
 * stats_warmup.h
   * __mean__ : calculates the average of a vector of ints
   * __weighted_mean__ : calculates the weighted mean of a vector of ints
