@@ -41,11 +41,10 @@ string to_roman_lower_bound(int n)
 	while (n)
 	{
 	  auto lb = m.lower_bound(n); // find the symbol
-		if (lb == end(m) || lb->first != n) // beyond the limit or not exact match?
-			lb = prev(lb);
-		roman += lb->second;
-		n -= lb->first;
+	  if (lb == end(m) || lb->first != n) // beyond the limit or not exact match?
+	    lb = prev(lb);
+	  roman += lb->second;
+	  n -= lb->first;
 	}
-
 	return roman;
 }
